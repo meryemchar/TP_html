@@ -2,11 +2,17 @@ html, button, input, select, textarea {
     color: #444; 
    } 
 
-   html { font-size: 1em; line-height: 1.4; }
+   html { 
+       font-size: 1em; 
+       line-height: 1.4; }
 
-   html{background-color: #ccc;}
+   html{
+       background-color: #ccc;}
 
-   #wrapper {min-width: 320px; max-width: 900px ; margin:auto;}
+   #wrapper {
+       min-width: 320px; 
+       max-width: 900px ; 
+       margin:auto;}
 
    img {
 	max-width: 15%;
