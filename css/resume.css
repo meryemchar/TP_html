@@ -29,12 +29,15 @@ header {
     background-color: white; 
     color: #777;
     border-radius: 3px;
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2) ;
-    
-    
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2) ;   
   }
+
   header >h1
   {font-family: 'Pacifico', cursive;
 
   }
-  
+   #maListe ,#monArticle{display: none;} 
+
+  .infoPerso  {display: none;}
+
+  /* article{display: none;} */

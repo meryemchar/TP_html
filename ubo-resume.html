@@ -26,6 +26,8 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head> 
 <body>
+
+  <script src="scriptsCV.js"></script>
  
     <div id="wrapper">
     <header itemscope itemtype="https://schema.org/Person">
@@ -34,19 +36,26 @@
         <h1><u>CHARIT Meryem</u></h1>
         <img src="CHARIT_photo.jpeg"/>
         <h2>Eleve ingénieur en LSI en double diplomation M2 DOSI</h2>
-         <dl>
+        <button onclick="myFunction('maListe')">Details</button>
+         <dl id="maListe">
             <dt >Nom : </dt>
-            <dd itemprop="name" >CHARIT</dd>
+            <button onclick="myFunction2('NOM','infoPerso')">+</button>
+            <dd itemprop="name" class="infoPerso" id="NOM">CHARIT</dd>
             <dt>Prenom :</dt>
-            <dd>Meryem</dd>
+            <button onclick="myFunction2('PRENOM','infoPerso')">+</button>
+            <dd class="infoPerso" id="PRENOM">Meryem</dd>
             <dt>Date de naissance :</dt>
-            <dd>08 juin 1997</dd>
+            <button onclick="myFunction2('DN','infoPerso')">+</button>
+            <dd class="infoPerso" id="DN">08 juin 1997</dd>
             <dt>email :</dt>
-            <dd>charitmeryem@gmail.com</dd>
+            <button onclick="myFunction2('EMAIL','infoPerso')">+</button>
+            <dd class="infoPerso" id="EMAIL">charitmeryem@gmail.com</dd>
             <dt>Nationalité :</dt>
-            <dd>Marocaine </dd>
+            <button onclick="myFunction2('NATIONALITE','infoPerso')">+</button>
+            <dd class="infoPerso" id="NATIONALITE">Marocaine </dd>
             <dt>Adresse :</dt>
-            <dd> 2,4 rue des archives Univ Res de Kergoat Bat A chambre A311</dd>
+            <button onclick="myFunction2('ADR','infoPerso')">+</button>
+            <dd class="infoPerso" id="ADR"> 2,4 rue des archives Univ Res de Kergoat Bat A chambre A311</dd>
         </dl>
     </header>
 
@@ -57,8 +66,9 @@
         </div>
 
         <div>
-          <article>
-            <h3>Expériences professionnelles</h3>
+          <h3>Expériences professionnelles</h3>
+          <button onclick="myFunction('monArticle')">Details</button>
+          <article id="monArticle">
             <article>
                 <h5>Marit(sarl) (2 MOIS) sept.2020- nov.2020 Rabat- Maroc </h5>
                 <p>La veille stratégique pour la prise de décision sur la production et consommation énergétique au niveau national. (MSBI, Sql Server).</p>
