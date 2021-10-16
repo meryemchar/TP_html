@@ -38,6 +38,6 @@ header {
   }
    #maListe ,#monArticle{display: none;} 
 
-  .infoPerso  {display: none;}
+  .infoPerso  {display:none;}
 
   /* article{display: none;} */
