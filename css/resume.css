@@ -3,6 +3,13 @@ html, button, input, select, textarea {
     font-family: 'Pacifico', cursive;
    } 
 
+   dt{
+       /* width:50%; */
+       /* display: inline-block; */
+       position:relative;
+        display: table-row; 
+       }
+
    html { 
        font-size: 1em; 
        line-height: 1.4; }

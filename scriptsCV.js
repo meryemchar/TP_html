@@ -43,5 +43,45 @@ function myFunction(id) {
     //x1.style.display = "block";
   }
 
+  function tooltip(id)
+  {
+    h=document.getElementById(id);
+    var competances={ "BD" : 'SQL Server, PostgreSQL, MySQL, Mongo DB',
+                     "WEB" : 'html/css/javascript , Laravel, Asp.net,Spring Boot,Angular',
+                      "LP":"C/C++, Java, Python, php ,Matlab",
+                      "CPT":"UML,Merise",
+                      "BI":"MSBI(SSIS,SSAS,SSRS)",
+                      "AI":"Machine Learning",
+                      "SCV":"git"
+                    };
+                    
+    var p=document.createElement('span');
+    p.textContent=competances[id];
+    p.setAttribute('id', "tooltip");
+    p.style.backgroundColor= "darkgray";
+    p.style.color="cyan";
+    p.style.position="relative";
+     document.addEventListener('mousemove', function(event)
+  {
+    var mousex = event.clientX; // Gets Mouse X
+    var mousey = event.clientY; // Gets Mouse Y
+    p.style.left=mousex+"px";
+  });
+    
+    h.insertAdjacentElement("afterend", p);
+    //h.appendChild(p);
+  }
+  //p.style.backgroundSize=window.getComputedStyle(p).getPropertyValue('width');
+    // p.style.padding="10px";
+    //p.style.whiteSpace="normale";
+    //b.prepend(newP);
+    //p.style.display="inlineblock" ;
+    //p.style.top=mousey+"px";
+    
+  function DeleteTooltip() 
+  {
+    var span=document.getElementById('tooltip');
+    span.remove();
+  }
   
 
