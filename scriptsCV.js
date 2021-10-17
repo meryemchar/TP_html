@@ -28,7 +28,6 @@ function myFunction(id) {
   } 
   
 
-
   function myFunction2(id1,classe) {
     // var x1 = document.getElementById(id1);
      var x2=document.getElementsByClassName(classe);
